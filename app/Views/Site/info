@@ -1,0 +1,50 @@
+<?php echo $this->extend('Site/Layout/main'); ?>
+
+
+<!-- Sessão de Titulo de página -->
+
+<?php echo $this->section('title'); ?>
+
+    <?php echo $title ?? ''; ?>
+
+<?php echo $this->endSection(); ?>
+
+
+
+
+<!-- Sessão de Estila da página -->
+
+<?php echo $this->section('css'); ?>
+
+<?php echo $this->endSection(); ?>
+ 
+
+
+
+<?php echo $this->section('content'); ?>
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="<?php echo base_url('assets-/') ?>image/home-img.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
+        <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+    </div>
+
+</section>
+
+<?php echo $this->endSection(); ?>
+
+
+
+
+<!-- Sessão de scripts  -->
+
+<?php echo $this->section('scripts'); ?>
+
+
+<?php echo $this->endSection(); ?>
